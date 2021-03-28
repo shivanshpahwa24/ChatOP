@@ -1,5 +1,5 @@
 {
-  "name": "chatcord",
+  "name": "chatop",
   "version": "1.0.0",
   "description": "Chat app made using node and socket.io",
   "main": "server.js",
