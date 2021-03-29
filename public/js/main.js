@@ -50,12 +50,16 @@ const outputMessage = (message) => {
 
 // Add room name to DOM
 const outputRoomName = (room) => {
-  document.getElementById("room-name").innerText = room;
+  document.getElementById("room-name1").innerText = room;
+  document.getElementById("room-name2").innerText = room;
 };
 
 //Add users to DOM
 const outputUsers = (users) => {
-  document.getElementById("users").innerHTML = `${users
+  document.getElementById("users1").innerHTML = `${users
+    .map((user) => `<li>${user.username}</li>`)
+    .join("")}`;
+  document.getElementById("users2").innerHTML = `${users
     .map((user) => `<li>${user.username}</li>`)
     .join("")}`;
 };
